@@ -1,0 +1,36 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+    <a style="color:chocolate" class="navbar-brand" href="#">Mehta Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+            <a style="color: red;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/home">Main Page</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+    <div class ="row">
+        <div class ="col-md-6">
+            <div class=" text-center">
+                <h1>Log in as Doctor</h1>
+                <h6>Please enter username and password </h6>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label"><h4>User Name</h4></label>
+                    <input type ="text" name="username" [(ngModel)]="username" class="form-control" id="username">
+                 </div>
+                 <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label"><h4>Password</h4></label>
+                    <input type ="password" name="password" [(ngModel)]="password" class="form-control" id="password">
+                 </div>   
+                <div class="d-grid  gap-2 d-md-block">
+                    <button (click)="checkLogin()" style="margin: 5px;" class ="btn btn-success" >Login</button>
+                    <button  style="margin: 5px;" class ="btn btn-danger" href="javascript:void(0);" routerLink="/home">Cancel</button>
+               </div> 
+            </form>
+        </div>
+    </div>    

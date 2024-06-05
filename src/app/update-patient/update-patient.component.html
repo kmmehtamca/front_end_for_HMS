@@ -1,0 +1,45 @@
+<div class ="container">
+    <h2 class="text-center">Update the Patient information</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="firstname" class="form-control" name="firstname" placeholder="Enter First Name" [(ngModel)]="patient.firstName" />
+        </div>
+        <div class="form-group">
+          <label>Middle Name</label>
+          <input type="text" id="middlename" class="form-control" name="middlename" placeholder="Enter Middle Name" [(ngModel)]="patient.middleName" />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Enter Last Name" [(ngModel)]="patient.lastName" />
+        </div>
+        <div class="form-group">
+          <label>Age</label>
+          <input type="text" id="age" class="form-control" name="age" placeholder="Enter Age" [(ngModel)]="patient.age" />
+        </div>
+        <div class="form-group">
+          <label>Blood Group</label>
+          <input type="text" id="blood" class="form-control" name="blood" placeholder="Enter Blood Group" [(ngModel)]="patient.blood" />
+        </div>
+        <div class="form-group">
+          <label>Prescription</label>
+          <input type="text" id="prescription" class="form-control" name="prescription" placeholder="Enter Medicine name" [(ngModel)]="patient.prescription" />
+        </div>
+        <div class="form-group">
+          <label>Dose</label>
+          <input type="text" id="dose" class="form-control" name="dose" placeholder="Enter Drug dose" [(ngModel)]="patient.dose" />
+        </div>
+        <div class="form-group">
+          <label>Fee</label>
+          <input type="text" id="fee" class="form-control" name="fee" placeholder="Enter the Charge" [(ngModel)]="patient.dose" />
+        </div>
+        <div class="form-group">
+          <label>Urgency</label>
+          <input type="text" id="urgency" class="form-control" name="urgency" placeholder="urgent ?" [(ngModel)]="patient.urgency"/>
+        </div>
+        <div>
+         <hr>   
+        <button type="submit" class="btn btn-success">Submit</button>
+        </div>    
+      </form>
+    </div>

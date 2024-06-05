@@ -1,0 +1,39 @@
+
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+    <a style="color:chocolate" class="navbar-brand" href="#">Mehta Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a style="color: red;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/medicinetlist">back</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <hr>
+    <h2 style="text-align:center;margin-top: 20px;">Update the Medicine information</h2>
+  </div>
+
+
+  <div class="container">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label><b>Drug Name</b></label>
+          <input type="text" id="drugname" class="form-control" name="drugname" placeholder="Enter First Name" [(ngModel)]="medicine.drugName" />
+        </div>
+        <div class="form-group">
+          <label><b>Stock</b></label>
+          <input type="text" id="stock" class="form-control" name="Stock" placeholder="Enter Middle Name" [(ngModel)]="medicine.stock" />
+        </div>
+    
+        <div>
+         <hr>   
+        <button type="submit" class="btn btn-success">Submit</button>
+        </div>    
+      </form>
+    
+</div>
