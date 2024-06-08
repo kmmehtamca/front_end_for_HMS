@@ -22,7 +22,7 @@ const routes: Routes = [
   {path:'admin',component:AdmindashComponent,canActivate:[AdminauthguardService]},
   {path:'appointementlist',component:AppointementComponent,canActivate:[AdminauthguardService]},
   {path:'create-Appointement',component:CreateAppointementComponent,canActivate:[AdminauthguardService]},
-  {path:'home',component:HomeComponent,canActivate:[DocauthguardService]},
+  {path:'home',component:HomeComponent},
   {path:'docdash',component:DocdashComponent,canActivate:[DocauthguardService]},
   {path:'createpatient',component:CreatePatientComponent,canActivate:[DocauthguardService]},
   {path:'medicinetlist',component:MedicinelistComponent,canActivate:[DocauthguardService]},
